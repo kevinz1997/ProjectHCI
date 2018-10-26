@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    >
+    <ProgressBar
+        android:id="@+id/register_progess"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <ScrollView
+    android:id="@+id/register_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trở về"
+                android:textColor="#FFF1EDED"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/back3"
+                android:onClick="clickToBack"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="#FFFAF2FA"
+                android:layout_marginTop="0dp"
+                >
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo Tài khoản"
+                android:textSize="35dp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                />
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:hint="Tên đăng nhập"
+                android:textColorHint="#FF747272"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:hint="Tên đầy đủ"
+                android:textColorHint="#FF747272"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:hint="Số điện thoại"
+                android:textColorHint="#FF747272"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:hint="Mật khẩu"
+                android:textColorHint="#FF747272"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:hint="Xác nhận mật khẩu"
+                android:textColorHint="#FF747272"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="25dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FF20A128"
+                android:layout_marginBottom="20sp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng kí"
+                        android:background="#FF20A128"
+                        android:textColor="#FFF7F2F2"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:onClick="clickToSaveForRegister"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        </LinearLayout
+            >
+    </ScrollView>
+
+</LinearLayout>
